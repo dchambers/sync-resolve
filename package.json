@@ -1,6 +1,6 @@
 {
   "name": "sync-resolve",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Synchronously resolve promises",
   "main": "dist/syncResolve.js",
   "jsnext:main": "src/syncResolve.js",
