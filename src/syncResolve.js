@@ -1,5 +1,3 @@
-'use strict';
-
 import Promise from 'bluebird';
 
 export default function syncResolve(code) {
@@ -15,12 +13,10 @@ export default function syncResolve(code) {
 			fn();
 		}
 
-		const value = promise.value();
+		return promise.value();
 	}
 	finally {
 		Promise.setScheduler(origScheduler);
 		global.Promise = origPromise;
 	}
-
-	return value;
 }
